@@ -137,7 +137,14 @@
 
          </script>
 		 <script type="text/javascript">
+		 var zuruckT = 0;
+if (zuruckT == 1){
+         navigator.app.exitApp();
+         };
+</script>
+		 <script type="text/javascript">
 function onDeviceReady1() {
+		zuruckT = 1;
          window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=no', 'hardwareback=yes');
          }
 </script>
@@ -148,12 +155,8 @@ function onDeviceReady1() {
         <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
         <script type="text/javascript" src="PushNotification.js"></script>
         
-        <button onclick="zuruckExit()">EXITEXIT</button>
+        
     </body>
-	<script type="text/javascript">
-function zuruckExit() {
-         navigator.app.exitApp();
-         };
-</script>
+	
 	
 </html>
