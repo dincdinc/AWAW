@@ -26,7 +26,6 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.contacts" />
     <gap:plugin name="org.apache.cordova.geolocation" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.network-information" />
@@ -34,5 +33,6 @@
 	<plugin name="cordova-plugin-console" spec="1.0.1" source="pgb" />
 	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
 	<plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
+	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
 	
 </widget>
