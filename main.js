@@ -119,4 +119,4 @@ var pushNotification;
                 $("#app-status-ul").append('<li>error:'+ error +'</li>');
             }
             
-			document.addEventListener('deviceready', onDeviceReady, true);
+			document.addEventListener('deviceready', onDeviceReady, false);
