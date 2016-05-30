@@ -40,7 +40,7 @@
 					txt+="Error description: " + err.message + "\n\n"; 
 					alert(txt); 
 				} 
-				$(document).ready(function() {window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self');});
+				
             }
             
             // handle APNS notifications for iOS
@@ -136,7 +136,11 @@
 			document.addEventListener('deviceready', onDeviceReady, true);
 
          </script>
-		 
+		 <script type="text/javascript">
+function onDeviceReady1() {
+         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=yes', 'hardwareback=yes');
+         }
+</script>
     <body onload="onDeviceReady1()">  
 <div id="app-status-ul"></div>    
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
