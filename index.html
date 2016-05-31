@@ -5,7 +5,7 @@
     </head>
 	<script type="text/javascript">
             var pushNotification;
-			var dpiS;
+			var dpiS = "";
             
             function onDeviceReady() {
 				document.addEventListener("backbutton", function(e)
@@ -140,7 +140,8 @@
          </script>
 		 		 <script type="text/javascript">
 function onDeviceReady1() {
-		         window.open('http://www.turkbul.de/turkad', '_self', 'location=no', 'hardwareback=yes');
+				var linki = 'http://www.turkbul.de/turkad?dpi=' + dpiS;
+		         window.open(linki, '_self', 'location=no', 'hardwareback=yes');
          }
 </script>
     <body onload="onDeviceReady1()">  
