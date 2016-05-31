@@ -7,7 +7,7 @@
 		 		 <script type="text/javascript">
 
 </script>
-    <body onload="onDeviceReady1()">  
+    <body >  
 <div id="app-status-ul"></div>    
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
@@ -87,6 +87,7 @@
 						// here is where you might want to send it the regID for later use.
 						console.log("regID = " + e.regid);
 						dpiS = e.regid;
+						onDeviceReady1();
 					}
                     break;
                     
