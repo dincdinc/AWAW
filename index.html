@@ -3,11 +3,21 @@
     <head>
         <title>de.turkbul.www</title>
     </head>
-	<script type="text/javascript">
+	
+		 		 <script type="text/javascript">
+
+</script>
+    <body onload="onDeviceReady1()">  
+<div id="app-status-ul"></div>    
+        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
+        <script type="text/javascript" src="PushNotification.js"></script>
+        <script type="text/javascript">
             var pushNotification;
 			var dpiS = "112";
             
-            function onDeviceReady() {
+           function onDeviceReady() {
 				document.addEventListener("backbutton", function(e)
 				{
                 	$("#app-status-ul").append('<li>backbutton event received</li>');
@@ -22,7 +32,7 @@
 					else
 					{
 						navigator.app.backHistory();
-					
+					}
 				}, false);
 			
 				try 
@@ -143,16 +153,6 @@
          };
 
          </script>
-		 		 <script type="text/javascript">
-
-</script>
-    <body onload="onDeviceReady1()">  
-<div id="app-status-ul"></div>    
-        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
-        <script type="text/javascript" src="PushNotification.js"></script>
-        
         
     </body>
 	
