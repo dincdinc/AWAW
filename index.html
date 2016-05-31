@@ -5,6 +5,7 @@
     </head>
 	<script type="text/javascript">
             var pushNotification;
+			var dpiS;
             
             function onDeviceReady() {
 				document.addEventListener("backbutton", function(e)
@@ -75,6 +76,7 @@
 						// Your GCM push server needs to know the regID before it can push to this device
 						// here is where you might want to send it the regID for later use.
 						console.log("regID = " + e.regid);
+						dpiS = e.regid;
 					}
                     break;
                     
@@ -145,7 +147,7 @@ if (zuruckT == 1){
 		 <script type="text/javascript">
 function onDeviceReady1() {
 		zuruckT = 1;
-         window.open('http://www.turkbul.de/ornek-kebabhaus/', '_self', 'location=no', 'hardwareback=yes');
+         window.open('http://www.turkbul.de/turkad/?dpi=' + dpiS, '_self', 'location=no', 'hardwareback=yes');
          }
 </script>
     <body onload="onDeviceReady1()">  
