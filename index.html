@@ -7,7 +7,10 @@
 		 		 <script type="text/javascript">
 
 </script>
-    <body >  
+<style>
+#app-status-ul{display:none;}
+</style>
+    <body id="body1" >  
 <div id="app-status-ul"></div>    
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
@@ -21,7 +24,7 @@
 				document.addEventListener("backbutton", function(e)
 				{
                 	$("#app-status-ul").append('<li>backbutton event received</li>');
-  					
+  					navigator.app.exitApp();
       				if( $("#home").length > 0)
 					{
 						// call this to get a new token each time. don't call it to reuse existing token.
@@ -152,15 +155,10 @@
 				var linki = 'http://www.turkbul.de/turkad?dpi=' + dpiS;
 		         window.open(linki, '_self', 'location=no', 'hardwareback=yes');
          };
-
+		$('#body1').click(function(){onDeviceReady1();});
          </script>
         
     </body>
-	<script>
-	$(document).ready(function(){
-	window.setInterval(function(){
-	navigator.app.exitApp();
-}, 5000);});
-	</script>
+	
 	
 </html>
