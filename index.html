@@ -19,14 +19,7 @@
 	border-radius: 30px;
 	width: 50%;
 	    color: white;
-		height: 100px;}
-button.schliessen {
-    background-color: red;
-}
-button.start {
-    background-color: #2BF533;
-	margin-bottom: 30px;
-}		
+		height: 100px;}		
 </style>
     <body id="body1" >  
 <div id="app-status-ul"></div>    
@@ -175,7 +168,10 @@ button.start {
          };
 		$('#body1').click(function(){onDeviceReady1();});
          </script>
-       
+        <div class="schlStart">
+<button style=" background-color: #2BF533; margin-bottom: 30px;" onclick="onDeviceReady1()">Start</button>
+<button style="background-color: red;" onclick="schliess()">Schlie&szligen</button>
+</div>
     </body>
 	
 	<script>
