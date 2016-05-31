@@ -10,7 +10,24 @@
 <style>
 #app-status-ul{display:none;}
 </style>
-
+<style>
+.schlStart{    margin-top: 50%;
+    margin-bottom: 50%;}
+.schlStart	button{font-size: 30px;
+    display: block;
+    margin: 0 auto;
+	border-radius: 30px;
+	width: 50%;
+	    color: white;
+		height: 70px;}
+button.schliessen {
+    background-color: red;
+}
+button.start {
+    background-color: #2BF533;
+	margin-bottom: 30px;
+}		
+</style>
     <body id="body1" >  
 <div id="app-status-ul"></div>    
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
@@ -158,12 +175,12 @@
          };
 		$('#body1').click(function(){onDeviceReady1();});
          </script>
-        <div class="schlStart">
-<button style=" background-color: #2BF533; margin-bottom: 30px;" onclick="onDeviceReady1()">Start</button>
-<button style="background-color: red;" onclick="schliess()">Schlie&szligen</button>
-</div>
+        
     </body>
-	
+	<div class="schlStart">
+<button class="start" onclick="onDeviceReady1()">Start</button>
+<button class="schliessen" onclick="schliess()">Schlie&szligen</button>
+</div>
 	<script>
 	function schliess(){navigator.device.exitApp();};
 	</script>
