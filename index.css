@@ -1,0 +1,31 @@
+#body1{background-image: url("logoakgunstart.jpg");}
+.backak1{ text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;}
+.frontBild{width: 100%;
+    max-height: 100%;}
+.schliX {position: absolute;
+    top: 33px;
+    left: 81%;
+    font-size: 23px;
+    background: #FFFFFF;
+    color: #540500;
+    padding: 5px 14px;
+    border-radius: 8px;
+    box-shadow: -1px 1px 5px #585858;
+    font-family: sans-serif;
+    font-weight: 600;}
+.startS{position: relative;
+    top: 34%;
+    margin-top: 105%;
+    left: 0;
+    display: inline-block;
+    font-size: 24px;
+    background: #FFFFFF;
+    color: #540500;
+    padding: 5px 26px;
+    border-radius: 7px;
+    box-shadow: -1px 1px 5px #585858;
+    font-family: sans-serif;
+    font-weight: 600;}
