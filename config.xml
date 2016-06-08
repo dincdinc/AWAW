@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="baeckerei-akgun/de.turkbul.www" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="ornek-kebabhaus/de.turkbul.www" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     
-    <name>Bäckerei Akgün</name>
-    <description>Die beste türkische Bäckerei in Herten.</description>
+    <name>Örnek Kebabhaus</name>
+    <description>Der beste Kebab.</description>
     <author email="dinc@" href="http://www.agameoftwohalves.com">AGOTH Webmaster</author>
 <content src="index.html" />
 <access origin="*" />
